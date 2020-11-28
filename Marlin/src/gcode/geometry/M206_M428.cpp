@@ -76,9 +76,9 @@ void GcodeSuite::M428() {
   xyz_float_t diff;
   LOOP_XYZ(i) {
     diff[i] = base_home_pos((AxisEnum)i) - current_position[i];
-    if (!WITHIN(diff[i], -20, 20) && home_dir((AxisEnum)i) > 0)
+    if (!WITHIN(diff[i], -40, 40) && home_dir((AxisEnum)i) > 0)
       diff[i] = -current_position[i];
-    if (!WITHIN(diff[i], -20, 20)) {
+    if (!WITHIN(diff[i], -40, 40)) {
       SERIAL_ERROR_MSG(STR_ERR_M428_TOO_FAR);
       LCD_ALERTMESSAGEPGM_P(PSTR("Err: Too far!"));
       BUZZ(200, 40);
