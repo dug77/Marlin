@@ -3308,7 +3308,7 @@
 // Temperature status LEDs that display the hotend and bed temperature.
 // If all hotends, bed temperature, and target temperature are under 54C
 // then the BLUE led is on. Otherwise the RED led is on. (1C hysteresis)
-//#define TEMP_STAT_LEDS
+// #define TEMP_STAT_LEDS
 
 // Support for BlinkM/CyzRgb
 //#define BLINKM
@@ -3354,7 +3354,7 @@
 #endif
 
 #if ANY(RGB_LED, RGBW_LED, PCA9632)
-  //#define RGB_STARTUP_TEST              // For PWM pins, fade between all colors
+  #define RGB_STARTUP_TEST              // For PWM pins, fade between all colors
   #if ENABLED(RGB_STARTUP_TEST)
     #define RGB_STARTUP_TEST_INNER_MS 10  // (ms) Reduce or increase fading speed
   #endif
