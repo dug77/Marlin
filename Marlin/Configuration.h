@@ -659,9 +659,9 @@
     #define DEFAULT_Ki_LIST {   1.08,   1.08 }
     #define DEFAULT_Kd_LIST { 114.00, 114.00 }
   #else
-    #define DEFAULT_Kp 21.54
-    #define DEFAULT_Ki 1.7
-    #define DEFAULT_Kd 68.07
+    #define DEFAULT_Kp 9.02
+    #define DEFAULT_Ki 0.42
+    #define DEFAULT_Kd 48.73
   #endif
 #endif
 
@@ -1162,7 +1162,7 @@
  * Override with M92
  *                                      X, Y, Z [, I [, J [, K...]]], E0 [, E1[, E2...]]
  */
-#define DEFAULT_AXIS_STEPS_PER_UNIT   { 80, 80, 400, 101 }
+#define DEFAULT_AXIS_STEPS_PER_UNIT   { 80, 80, 400, 932 }
 
 /**
  * Default Max Feed Rate (linear=mm/s, rotational=°/s)
@@ -1647,7 +1647,7 @@
 // @section extruder
 
 // For direct drive extruder v9 set to true, for geared extruder set to false.
-#define INVERT_E0_DIR true
+#define INVERT_E0_DIR false
 #define INVERT_E1_DIR false
 #define INVERT_E2_DIR false
 #define INVERT_E3_DIR false
