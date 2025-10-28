@@ -282,7 +282,7 @@
 #define HEATER_0_PIN                        PB1   // Heater0
 #define HEATER_1_PIN                        PD14  // Heater1
 #if TEMP_SENSOR_CHAMBER && HOTENDS < 3
-  #define HEATER_CHAMBER_PIN                PB0   // Heater2
+  #define HEATER_CHAMBER_PIN                PD14   // Heater1
 #else
   #define HEATER_2_PIN                      PB0   // Heater2
 #endif
