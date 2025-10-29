@@ -252,6 +252,11 @@
   #define TEMP_BED_PIN                      PF3   // T0 <-> Bed
 #endif
 
+// MAX31865
+#if TEMP_SENSOR_0 == -5
+  #define TEMP_0_CS_PIN                     PE2
+#endif
+
 #if TEMP_SENSOR_PROBE && !defined(TEMP_PROBE_PIN)
   #if TEMP_SENSOR_PROBE_IS_AD8495 || TEMP_SENSOR_PROBE == 20
     #if HOTENDS == 2
