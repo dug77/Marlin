@@ -255,6 +255,11 @@
 // MAX31865
 #if TEMP_SENSOR_0 == -5
   #define TEMP_0_CS_PIN                     PE2
+  #define TEMP_0_SCK_PIN                    PC10
+  #define TEMP_0_MISO_PIN                   PC11
+  #define TEMP_0_MOSI_PIN                   PC12
+  #define SOFTWARE_SPI
+  #define FORCE_SOFT_SPI
 #endif
 
 #if TEMP_SENSOR_PROBE && !defined(TEMP_PROBE_PIN)
